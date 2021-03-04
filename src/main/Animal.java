@@ -26,10 +26,18 @@ abstract class Animal {
         return name;
     }
 
+    public int getYear() {
+        return year;
+    }
+
     abstract String move();
 
     abstract String breath();
 
     abstract String reproduce();
 
+    @Override
+    public String toString() {
+        return getName() + " " + getYear();
+    }
 }
